@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors');
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -9,6 +10,7 @@ const port = process.env.PORT || 3001;
 app.use(express.json()); // For parsing application/json
 app.use(express.urlencoded({ extended: true })); // For parsing application/x-www-form-urlencoded
 
+app.use(cors());
 
 //Create a weather endpoint
 app.get('/api/weather', async (req, res) => {
@@ -43,4 +45,5 @@ app.get('/api/weather', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
   });
+
 
