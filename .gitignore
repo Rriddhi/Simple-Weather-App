@@ -1,0 +1,28 @@
+# Dependency directories
+node_modules/
+
+# Optional for MacOS users
+.DS_Store
+
+# Optional for Windows users
+Thumbs.db
+
+# Optional for those using IDEs/editors like VSCode, IntelliJ, etc.
+.vscode/
+.idea/
+*.code-workspace
+
+# Environment files
+.env
+
+# Build output
+/build
+/dist
+
+# Logs
+*.log
+
+# Others
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
